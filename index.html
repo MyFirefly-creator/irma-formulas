@@ -1,196 +1,266 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css"/>
-    <title>IRMA Formulas</title>
-    <style>
-        .jumbotron .display-4, .jumbotron .lead {
-            color: white;
-        }
-    </style>
-    <!-- my css -->
-     
-    <link rel="stylesheet" href="style.css"/>
-    <title>IRMA Formulas</title>
-  </head>
-  <body id="home">
-    <!-- Background Image -->
-    <img src="image/background.png" alt="" class="bg-img">
-    
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <title>IRMA Formulas</title>
+  <style>
+    .jumbotron .display-4,
+    .jumbotron .lead {
+      color: white;
+    }
+  </style>
+
+  <!-- AOS style -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+  <title>IRMA Formulas</title>
+</head>
+
+<body id="home">
+  <!-- Background Image -->
+  <img src="image/background.png" alt="" class="bg-img" loading="lazy" />
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" data-aos="fade-down">
+    <div class="container">
+      <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img src="image/IMG_20240711_072225.jpg" alt="" width="30" height="30"
+              class="d-inline-block align-text-top rounded-circle" />
+            IRMA Formulas
+          </a>
+        </div>
+      </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#rumpun">Rumpun</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://forms.gle/EgedNtp5fAGMGkZr9">Daftar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Jumbotron -->
+  <section class="jumbotron text-center bg-grad-dark mt-4">
+    <img src="image/IMG_20240711_072225.jpg" alt="IRMA Formulas" width="200" class="rounded-circle bg-transparent mt-4" data-aos="zoom-in"/>
+    <h1 class="text-light mt-2 fw-bold" data-aos="fade-up">IRMA FORMULAS</h1>
+    <p class="lead mt-0" data-aos="fade-up">Ikatan Remaja Majid Forum Muslim Sebelas</p>
+    <div class="mt-4 mb-4 flex justify-content-center align-items-center gap-3" data-aos="fade-up">
+      <a href="https://forms.gle/EgedNtp5fAGMGkZr9" class="btn btn-primary px-4">Daftar</a>
+      <a href="#about" class="btn btn-light">About</a>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,160L21.8,165.3C43.6,171,87,181,131,165.3C174.5,149,218,107,262,96C305.5,85,349,107,393,128C436.4,149,480,171,524,154.7C567.3,139,611,85,655,53.3C698.2,21,742,11,785,16C829.1,21,873,43,916,58.7C960,75,1004,85,1047,90.7C1090.9,96,1135,96,1178,85.3C1221.8,75,1265,53,1309,42.7C1352.7,32,1396,32,1418,32L1440,32L1440,260L0,260Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Jumbotron End -->
+
+  <!-- About -->
+  <section id="about">
+    <div class="bg-white">
       <div class="container">
-        <nav class="navbar navbar-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="image/IMG_20240711_072225.jpg" alt="" width="30" height="30" class="d-inline-block align-text-top rounded-circle">
-                    IRMA Formulas
-              </a>
-            </div>
-        </nav>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#rumpun">Rumpun</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://forms.gle/EgedNtp5fAGMGkZr9">Daftar</a>
-            </li>
-          </ul>
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2 data-aos="fade-up">About IRMA Formulas</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4">
+            <p data-aos="fade-up">
+              Ikatan Remaja Masjid Forum Muslim Sebelas (IRMA Formulas) adalah suatu organisasi ekstrakulikuler yang
+              berfungsi sebagai wadah atau tempat bagi para remaja masjid di SMK Negeri 11 Bandung agar lebih
+              terkoodinir.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p data-aos="fade-up">
+              IRMA Formulas hadir guna mewakilkan ajaran agama Islam yang ramah dengan tujuan agar para remaja masjid
+              dapat beramar ma'ruf dan bernahyi munkar sesuai perintah Allah SWT.
+            </p>
+          </div>
+          <div class="mt-2">
+            <h3 data-aos="fade-up">
+              Sifat yang dimiliki organisasi:
+            </h3>
+            <ol class="text-start d-flex flex-column justify-content-center align-items-center" data-aos="fade-up">
+              <li>
+                Agamis, yang berarti selalu memegang nilai-nilai agama.
+              </li>
+              <li>
+                Berakhlakul Karimah, yang berarti prinsip mahmudah.
+              </li>
+              <li>
+                Tafahum, yang berarti saling memahami antar IRMA Formulas.
+              </li>
+              <li>
+                Ta'awun, yang berarti saling tolong menolong dalam kebaikan.
+              </li>
+            </ol>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250" class="bg-white">
+      <path fill="#556b2f" fill-opacity="1"
+        d="M0,128L31,138.7C53,149,106.7,171,160,165.3C213,160,266.7,128,320,133.3C373,139,426.7,181,480,192C533,203,586.7,181,640,154.7C693,128,746.7,96,800,74.7C853,53,906.7,43,960,58.7C1013,75,1066.7,117,1120,112C1173,107,1226.7,53,1280,42.7C1333,32,1386.7,64,1413.3,80L1440,96L1440,260L0,260Z">
+      </path>
+    </svg>
+  </section>
+  <!-- About End -->
+
+  <!-- Rumpun -->
+  <section id="rumpun">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col text-light">
+          <h2 data-aos="fade-up">Rumpun</h2>
         </div>
       </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center bg-grad-dark">
-        <img src="image/IMG_20240711_072225.jpg" alt="IRMA Formulas" width="200" class="rounded-circle bg-transparent"/>
-        <h1 class="display-4 bold-text">IRMA Formulas</h1>
-        <p class="lead">Ikatan Remaja Majid Forum Muslim Sebelas</p>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250"><path fill="#ffffff" fill-opacity="1" d="M0,160L21.8,165.3C43.6,171,87,181,131,165.3C174.5,149,218,107,262,96C305.5,85,349,107,393,128C436.4,149,480,171,524,154.7C567.3,139,611,85,655,53.3C698.2,21,742,11,785,16C829.1,21,873,43,916,58.7C960,75,1004,85,1047,90.7C1090.9,96,1135,96,1178,85.3C1221.8,75,1265,53,1309,42.7C1352.7,32,1396,32,1418,32L1440,32L1440,260L0,260Z"></path></svg>    
-    </section>
-        <!-- Jumbotron End -->
-
-    <!-- About -->
-    <section id="about">
-      <div class="bg-white">
-        <div class="container">
-            <div class="row text-center mb-3">
-                <div class="col">
-                    <h2>About IRMA Formulas</h2>
-                </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-3" data-aos="fade-up">
+          <div class="card h-100">
+            <img src="image/dakwah.jpg" class="card-img-top" alt="Rumpun Dakwah" width="300px" height="200px" />
+            <div class="card-body">
+              <h5 class="card-title">Rumpun Dakwah</h5>
+              <p class="card-text">
+                Deskripsi singkat mengenai Rumpun Dakwah IRMA Formulas.
+              </p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dakwahModal">
+                Selengkapnya
+              </button>
             </div>
-            <div class="row justify-content-center fs-5 text-center">
-                <div class="col-md-4">
-                    <p>Ikatan Remaja Masjid Forum Muslim Sebelas (IRMA Formulas) Adalah Suatu Organisasi Ekstrakulikuler Yang Berfungsi Sebagai Wadah Atau Tempat Bagi Para Remaja Masjid Di SMKN 11 Bandung.</p>
-                </div>
-                <div class="col-md-4">
-                    <p>Agar Lebih Terkoodinir Guna Mewakilkan Ajaran Agama Islam Yang Ramah Dengan Tujuan Agar Para Remaja Masjid Dapat Beramal Ma'ruf Dan Bernahyi Munkar Sesuai Perintah Allah SWT.</p>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-up">
+          <div class="card h-100">
+            <img src="image/Hadroh Betawi.jpg" class="card-img-top" alt="Rumpun Hadroh" width="300px" height="200px" />
+            <div class="card-body">
+              <h5 class="card-title">Rumpun Hadroh</h5>
+              <p class="card-text">
+                Deskripsi singkat mengenai Rumpun Hadroh IRMA Formulas.
+              </p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hadrohModal">
+                Selengkapnya
+              </button>
             </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-up">
+          <div class="card h-100">
+            <img src="image/kaligrafi.jpg" class="card-img-top" alt="Rumpun Kaligrafi" width="300px" height="200px" />
+            <div class="card-body">
+              <h5 class="card-title">Rumpun Kaligrafi</h5>
+              <p class="card-text">
+                Deskripsi singkat mengenai Rumpun Kaligrafi IRMA Formulas.
+              </p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kaligrafiModal">
+                Selengkapnya
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-up">
+          <div class="card h-100">
+            <img src="image/mtq.jpg" class="card-img-top" alt="Rumpun MTQ" width="300px" height="200px" />
+            <div class="card-body">
+              <h5 class="card-title">Rumpun MTQ</h5>
+              <p class="card-text">
+                Deskripsi singkat mengenai Rumpun MTQ IRMA Formulas.
+              </p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mtqModal">
+                Selengkapnya
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-up">
+          <div class="card h-100">
+            <img src="image/nasyid.png" class="card-img-top" alt="Rumpun Nasyid" width="300px" height="200px" />
+            <div class="card-body">
+              <h5 class="card-title">Rumpun Nasyid</h5>
+              <p class="card-text">
+                Deskripsi singkat mengenai Rumpun Nasyid IRMA Formulas.
+              </p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nasyidModal">
+                Selengkapnya
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3" data-aos="fade-up">
+          <div class="card h-100">
+            <img src="image/tahfidz.png" class="card-img-top" alt="Rumpun Tahfidz" width="300px" height="200px" />
+            <div class="card-body">
+              <h5 class="card-title">Rumpun Tahfidz</h5>
+              <p class="card-text">
+                Deskripsi singkat mengenai Rumpun Tahfidz IRMA Formulas.
+              </p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tahfidzModal">
+                Selengkapnya
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250" class="bg-white"><path fill="#556b2f" fill-opacity="1" d="M0,128L31,138.7C53,149,106.7,171,160,165.3C213,160,266.7,128,320,133.3C373,139,426.7,181,480,192C533,203,586.7,181,640,154.7C693,128,746.7,96,800,74.7C853,53,906.7,43,960,58.7C1013,75,1066.7,117,1120,112C1173,107,1226.7,53,1280,42.7C1333,32,1386.7,64,1413.3,80L1440,96L1440,260L0,260Z"></path></svg>
-    </section>
-    <!-- About End -->
-
-    <!-- Rumpun -->
-    <section id="rumpun">
-        <div class="container">
-            <div class="row text-center mb-3">
-                <div class="col text-light">
-                    <h2>Rumpun</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <img src="image/dakwah.jpg" class="card-img-top" alt="Rumpun Dakwah" width="300px" height="200px">
-                        <div class="card-body">
-                            <h5 class="card-title">Rumpun Dakwah</h5>
-                            <p class="card-text">Deskripsi singkat mengenai Rumpun Dakwah IRMA Formulas.</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dakwahModal">
-                              Selengkapnya
-                            </button>
-                          </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <img src="image/Hadroh Betawi.jpg" class="card-img-top" alt="Rumpun Hadroh" width="300px" height="200px">
-                        <div class="card-body">
-                            <h5 class="card-title">Rumpun Hadroh</h5>
-                            <p class="card-text">Deskripsi singkat mengenai Rumpun Hadroh IRMA Formulas.</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hadrohModal">
-                              Selengkapnya
-                            </button>
-                          </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <img src="image/kaligrafi.jpg" class="card-img-top" alt="Rumpun Kaligrafi" width="300px" height="200px">
-                        <div class="card-body">
-                            <h5 class="card-title">Rumpun Kaligrafi</h5>
-                            <p class="card-text">Deskripsi singkat mengenai Rumpun Kaligrafi IRMA Formulas.</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kaligrafiModal">
-                              Selengkapnya
-                            </button>
-                          </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <img src="image/mtq.jpg" class="card-img-top" alt="Rumpun MTQ" width="300px" height="200px">
-                        <div class="card-body">
-                            <h5 class="card-title">Rumpun MTQ</h5>
-                            <p class="card-text">Deskripsi singkat mengenai Rumpun MTQ IRMA Formulas.</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mtqModal">
-                              Selengkapnya
-                            </button>
-                          </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <img src="image/nasyid.png" class="card-img-top" alt="Rumpun Nasyid" width="300px" height="200px">
-                        <div class="card-body">
-                            <h5 class="card-title">Rumpun Nasyid</h5>
-                            <p class="card-text">Deskripsi singkat mengenai Rumpun Nasyid IRMA Formulas.</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nasyidModal">
-                              Selengkapnya
-                            </button>
-                          </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <img src="image/tahfidz.png" class="card-img-top" alt="Rumpun Tahfidz" width="300px" height="200px">
-                        <div class="card-body">
-                            <h5 class="card-title">Rumpun Tahfidz</h5>
-                            <p class="card-text">Deskripsi singkat mengenai Rumpun Tahfidz IRMA Formulas.</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tahfidzModal">
-                             Selengkapnya
-                            </button>
-                          </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Rumpun End -->
-<!-- Modal for Dakwah -->
-<div class="modal fade" id="dakwahModal" tabindex="-1" aria-labelledby="dakwahModalLabel" aria-hidden="true">
+    </div>
+  </section>
+  <!-- Rumpun End -->
+  <!-- Modal for Dakwah -->
+  <div class="modal fade" id="dakwahModal" tabindex="-1" aria-labelledby="dakwahModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="dakwahModalLabel">Rumpun Dakwah</h5>
+          <h5 class="modal-title fw-medium" id="dakwahModalLabel">Rumpun Dakwah</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="image/dakwah.jpg" class="img-fluid mb-3" alt="Rumpun Dakwah">
-          <p>Dakwah adalah aktivitas mengajak atau menyeru orang lain untuk memeluk dan mengamalkan ajaran Islam. Dalam konteks ekstrakurikuler, rumpun dakwah fokus pada kegiatan penyebaran nilai-nilai Islam, seperti ceramah, kajian, dan kegiatan sosial yang berlandaskan prinsip-prinsip Islam.</p>
+          <img src="image/dakwah.jpg" class="img-fluid mb-3" alt="Rumpun Dakwah" />
+          <p>
+            Dakwah adalah aktivitas mengajak atau menyeru orang lain untuk
+            memeluk dan mengamalkan ajaran Islam. Dalam konteks
+            ekstrakurikuler, rumpun dakwah fokus pada kegiatan penyebaran
+            nilai-nilai Islam, seperti ceramah, kajian, dan kegiatan sosial
+            yang berlandaskan prinsip-prinsip Islam.
+          </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
         </div>
       </div>
     </div>
@@ -202,15 +272,23 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="hadrohModalLabel">Rumpun Hadroh</h5>
+          <h5 class="modal-title fw-medium" id="hadrohModalLabel">Rumpun Hadroh</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="image/Hadroh Betawi.jpg" class="img-fluid mb-3" alt="Rumpun Hadroh">
-          <p>Hadroh adalah seni musik tradisional yang sering dimainkan dalam acara keagamaan Islam. Ini melibatkan alat musik perkusi seperti rebana. Tujuan dari Hadroh adalah untuk memuji dan mengagungkan Allah serta mengingatkan kita pada nilai-nilai Islam melalui syair-syair yang dinyanyikan.</p>
+          <img src="image/Hadroh Betawi.jpg" class="img-fluid mb-3" alt="Rumpun Hadroh" />
+          <p>
+            Hadroh adalah seni musik tradisional yang sering dimainkan dalam
+            acara keagamaan Islam. Ini melibatkan alat musik perkusi seperti
+            rebana. Tujuan dari Hadroh adalah untuk memuji dan mengagungkan
+            Allah serta mengingatkan kita pada nilai-nilai Islam melalui
+            syair-syair yang dinyanyikan.
+          </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
         </div>
       </div>
     </div>
@@ -222,15 +300,24 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="kaligrafiModalLabel">Rumpun Kaligrafi</h5>
+          <h5 class="modal-title fw-medium" id="kaligrafiModalLabel">
+            Rumpun Kaligrafi
+          </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="image/kaligrafi.jpg" class="img-fluid mb-3" alt="Rumpun Kaligrafi">
-          <p>Kaligrafi Islam adalah seni menulis indah dengan huruf Arab. Rumpun Kaligrafi bertujuan untuk mengembangkan keterampilan siswa dalam seni kaligrafi, yang juga menjadi salah satu bentuk penghormatan terhadap Al-Qur'an dan tradisi Islam.</p>
+          <img src="image/kaligrafi.jpg" class="img-fluid mb-3" alt="Rumpun Kaligrafi" />
+          <p>
+            Kaligrafi Islam adalah seni menulis indah dengan huruf Arab.
+            Rumpun Kaligrafi bertujuan untuk mengembangkan keterampilan siswa
+            dalam seni kaligrafi, yang juga menjadi salah satu bentuk
+            penghormatan terhadap Al-Qur'an dan tradisi Islam.
+          </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
         </div>
       </div>
     </div>
@@ -242,15 +329,22 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="mtqModalLabel">Rumpun MTQ</h5>
+          <h5 class="modal-title fw-medium" id="mtqModalLabel">Rumpun MTQ</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="image/mtq.jpg" class="img-fluid mb-3" alt="Rumpun MTQ">
-          <p>MTQ adalah kompetisi membaca Al-Qur'an dengan tartil (lambat dan jelas) dan tajwid yang benar. Rumpun MTQ bertujuan untuk meningkatkan kemampuan siswa dalam membaca Al-Qur'an, serta menghafal dan memahami isinya.</p>
+          <img src="image/mtq.jpg" class="img-fluid mb-3" alt="Rumpun MTQ" />
+          <p>
+            MTQ adalah kompetisi membaca Al-Qur'an dengan tartil (lambat dan
+            jelas) dan tajwid yang benar. Rumpun MTQ bertujuan untuk
+            meningkatkan kemampuan siswa dalam membaca Al-Qur'an, serta
+            menghafal dan memahami isinya.
+          </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
         </div>
       </div>
     </div>
@@ -259,48 +353,95 @@
 
   <!-- Modal for Nasyid -->
   <!-- Modal for Nasyid -->
-<div class="modal fade" id="nasyidModal" tabindex="-1" aria-labelledby="nasyidModalLabel" aria-hidden="true">
+  <div class="modal fade" id="nasyidModal" tabindex="-1" aria-labelledby="nasyidModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="nasyidModalLabel">Rumpun Nasyid</h5>
+          <h5 class="modal-title fw-medium" id="nasyidModalLabel">Rumpun Nasyid</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="image/nasyid.png" class="img-fluid mb-3" alt="Rumpun Nasyid">
-          <p>Nasyid adalah seni musik vokal yang berisi lirik-lirik Islami. Rumpun Nasyid mengajarkan siswa untuk menyanyikan lagu-lagu Islami yang biasanya berisi pesan moral, nasihat, dan dakwah. Nasyid bisa dibawakan dalam bentuk solo atau kelompok.</p>
+          <img src="image/nasyid.png" class="img-fluid mb-3" alt="Rumpun Nasyid" />
+          <p>
+            Nasyid adalah seni musik vokal yang berisi lirik-lirik Islami.
+            Rumpun Nasyid mengajarkan siswa untuk menyanyikan lagu-lagu Islami
+            yang biasanya berisi pesan moral, nasihat, dan dakwah. Nasyid bisa
+            dibawakan dalam bentuk solo atau kelompok.
+          </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
         </div>
       </div>
     </div>
-</div>
-<!-- End Modal for Nasyid -->
+  </div>
+  <!-- End Modal for Nasyid -->
 
-      <!-- Modal for Tahfidz -->
-      <div class="modal fade" id="tahfidzModal" tabindex="-1" aria-labelledby="tahfidzModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="tahfidzModalLabel">Rumpun Tahfidz</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="image/tahfidz.png" class="img-fluid mb-3" alt="Rumpun Tahfidz">
-              <p>ahfidz adalah kegiatan menghafal Al-Qur'an. Rumpun Tahfidz menyediakan program dan bimbingan bagi siswa yang ingin menghafal Al-Qur'an, dengan tujuan meningkatkan kedekatan mereka dengan kitab suci dan meningkatkan pemahaman mereka terhadap ajaran Islam.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
+  <!-- Modal for Tahfidz -->
+  <div class="modal fade mb-3" id="tahfidzModal" tabindex="-1" aria-labelledby="tahfidzModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-medium" id="tahfidzModalLabel">Rumpun Tahfidz</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="image/tahfidz.png" class="img-fluid mb-3" alt="Rumpun Tahfidz" />
+          <p>
+            ahfidz adalah kegiatan menghafal Al-Qur'an. Rumpun Tahfidz
+            menyediakan program dan bimbingan bagi siswa yang ingin menghafal
+            Al-Qur'an, dengan tujuan meningkatkan kedekatan mereka dengan
+            kitab suci dan meningkatkan pemahaman mereka terhadap ajaran
+            Islam.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
         </div>
       </div>
+    </div>
+  </div>
+  <!-- End Modal for Tahfidz -->
 
-  <footer class="footer text-center bg-white">@Copyright IRMA Formulas</footer>
-      <!-- End Modal for Tahfidz -->
-      <!-- Bootstrap JS Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-MpmwzV1Zp+8jv7TPoBi6tF1cDQCue2zVHfKbw4GC3X+bl0yif8ILYTM1YpbpEZvA" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
-    </body>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top footer bg-light">
+    <p class="col-md-4 mb-0 text-body-secondary">© 2024 Irma Formulas</p>
+
+    <a href="/"
+      class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <img src="image/IMG_20240711_072225.jpg" alt="" width="50 " height="50 "
+              class="d-inline-block align-text-top rounded-circle" />
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-body-secondary">Rumpun</a>
+      </li>
+    </ul>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-MpmwzV1Zp+8jv7TPoBi6tF1cDQCue2zVHfKbw4GC3X+bl0yif8ILYTM1YpbpEZvA"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
